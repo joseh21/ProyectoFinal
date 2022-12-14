@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary" class="alinear">
+    <br><ion-title class="titulo">Bienvenido profesor!</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+    <ion-accordion-group>
+      <ion-accordion >
+          <ion-item slot="header" color="warning">
+            <ion-label>Herramientas</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            <ion-button  expand="block" (click)="rutaqr()" color="warning">
+              Código Qr
+            </ion-button>
+            <ion-button  expand="block"  (click)="rutalista()"  color="warning">
+              Estudiantes de la clase
+            </ion-button>
+            
+            <ion-button  expand="block"  (click)="rutasucursales()"  color="warning">
+              Sedes correspondientes
+            </ion-button>
+          </div>
+        </ion-accordion>
+        <ion-accordion >
+        </ion-accordion>
+    </ion-accordion-group>
+</ion-content>
+
+<!-- Footer -->
+<ion-footer >
+  <ion-button expand="full" [routerLink]="['/home']" color="danger" >
+    <ion-icon slot="start" name="exit"></ion-icon>
+    Salir 
+   </ion-button>
+</ion-footer>

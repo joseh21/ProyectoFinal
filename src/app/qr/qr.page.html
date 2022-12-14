@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Secondary" class="alinear">
+    <ion-buttons slot="start">
+      <ion-back-button class="titulo" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <br><ion-title class="titulo"> QR</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+  <div *ngIf="id == 1">
+    <br>
+    <br>
+    <ion-toolbar color="mycolor" class="alinear">
+      <img src="/assets/len.png" />
+   </ion-toolbar>
+  </div>
+  <div *ngIf="id == 2">
+    <br>
+    <br>
+    <ion-toolbar color="mycolor" class="alinear">
+      <img src="/assets/mate.png" />
+   </ion-toolbar>
+  </div>
+  <div *ngIf="id == 3">
+    <br>
+    <br>
+    <ion-toolbar color="mycolor" class="alinear">
+      <img src="/assets/ingles.png" />
+   </ion-toolbar>
+  </div>
+
+</ion-content>
+
+<!-- Footer -->
+<ion-footer >
+  <ion-button expand="full" [routerLink]="['/home']" color="danger" >
+    <ion-icon slot="start" name="exit"></ion-icon>
+    Salir 
+   </ion-button>
+</ion-footer>

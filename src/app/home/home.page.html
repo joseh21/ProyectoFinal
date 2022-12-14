@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="container"color="warning">
+     <img src="/assets/icon/02.png" />
+    <br><ion-title class="titulo">Registro de asistencia Duoc</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="mycolor">
+      <ion-title  size="large" class="titulo" >Registro de asistencia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <form>
+      <ion-item lines="full">
+        <ion-label position="floating">Correo electronico o usuario</ion-label>
+        <ion-input placeholder="Nombre de usuario" #cuenta value="{{CUENTA}}"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input  type="password" placeholder="Contraseña" #contra value="{{CONTRA}}"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <p  class="" ><a>Olvidó su contraseña?</a></p>
+    
+    <ion-button class="button" color="warning"(click)="leerreg(cuenta,contra)" expand="block">Entrar</ion-button>
+    <ion-button class="button" color="warning"[routerLink]="['/registrar']" expand="block">Registro</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>
+
+
+
+
+
+
+</ion-content>
+<!-- Footer -->
+<ion-footer collapse="fade">
+  <ion-toolbar color="mycolor">
+    <ion-title size="small" class="titulo"></ion-title>
+  </ion-toolbar>
+</ion-footer>
+

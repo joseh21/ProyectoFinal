@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary" class="alinear">
+    <br><ion-title class="titulo">Bienvenido!</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+      
+        
+            <ion-accordion-group>
+              <ion-accordion >
+                  <ion-item slot="header" color="warning">
+                    <ion-label>Registro de asistencia</ion-label>
+                  </ion-item>
+                  <div class="ion-padding" slot="content">
+                    <ion-button  expand="block" (click)="starscan()" color="warning">
+                      Escanear
+                    </ion-button>
+                    <!-- <ion-button  expand="full"  (click)="rutalista()"  color="dark">
+                      Lista de estudiantes 
+                    </ion-button> -->
+                    
+                  </div>
+                </ion-accordion>
+                <ion-accordion >
+                </ion-accordion>
+            </ion-accordion-group>
+          
+      
+    
+      <ion-button expand="full" (click)="reset()" color="dark" *ngIf="scanResult">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+        Resetear
+      </ion-button>
+      <video #video [hidden]="!scanActive" width="100%"></video>
+      <canvas #canvas hidden></canvas>
+      <ion-button expand="full" (click)="stopscan()" color="dark" *ngIf="scanActive">
+        <ion-icon slot="start" name="close"></ion-icon>
+        Parar Camara
+      </ion-button>
+      <ion-card *ngIf="scanResult">
+        <ion-card-header>
+          <ion-card-title>Codigo QR</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ scanResult }}
+        </ion-card-content>
+      </ion-card>
+
+  </ion-content>
+<!-- Footer -->
+<ion-footer >
+  <ion-button expand="full" [routerLink]="['/home']" color="danger" >
+    <ion-icon slot="start" name="exit"></ion-icon>
+    Salir
+   </ion-button>
+</ion-footer>

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Secondary" class="alinear">
+    <ion-buttons slot="start">
+      <ion-back-button class="titulo" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <br><ion-title class="titulo">Registro</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Cuenta</ion-label>
+      <ion-input placeholder="Cuenta" #cuenta value="{{CUENTA}}"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input  type="password" placeholder="Contraseña" #contra value="{{CONTRA}}"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Repetir contraseña</ion-label>
+      <ion-input type="password" placeholder="Repetir Contraseña" #repcontra value="{{REPCONTRA}}"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Usuario-tipo</ion-label>
+      <ion-input placeholder="Estudiante o Profesor" #tipo_user value="{{TIPO_USER}}"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <br>
+    <ion-button class="button" color="warning"(click)="agregar(cuenta,contra,repcontra,tipo_user)" expand="block">Registrarse</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<ion-footer collapse="fade">
+  <ion-toolbar color="mycolor">
+    <ion-title size="small" class="titulo"></ion-title>
+  </ion-toolbar>
+</ion-footer>

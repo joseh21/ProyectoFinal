@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Secondary" class="alinear">
+    <ion-buttons slot="start">
+      <ion-back-button class="titulo" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <br><ion-title class="titulo">Curso</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+
+  <div *ngIf="listadoasistenciagen.length > 0">
+    <div *ngFor="let aux1 of listadoasistenciagen" >
+        <ion-list lines="full">
+          <ion-item>
+            <ion-label>{{aux1.nombremateria}}</ion-label>
+          </ion-item>
+        </ion-list>
+        <div *ngFor="let aux2 of listadoalum" >
+          <div *ngIf="aux1.idEstudiante == aux2.id">
+                <ion-list lines="inset">
+                  <ion-item>
+                    <ion-label>Asistió: {{aux2.nombre}}</ion-label>
+                  </ion-item>
+                <br>
+                </ion-list>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<!-- Footer -->
+<ion-footer >
+  <ion-button expand="full" [routerLink]="['/home']" color="danger" >
+    <ion-icon slot="start" name="exit"></ion-icon>
+    Salir   
+   </ion-button>
+</ion-footer>

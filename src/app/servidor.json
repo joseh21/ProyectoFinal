@@ -1,0 +1,192 @@
+{
+  "Usuarios": [
+    {
+      "id": 0,
+      "nombre": "Admin",
+      "credencialAcesso": "admin",
+      "correo": "admin@gmail.com",
+      "contraseña": "1111"
+    },
+    {
+      "id": 1,
+      "nombre": "Leanne Graham",
+      "credencialAcesso": "Bret",
+      "correo": "Sincere@april.biz",
+      "contraseña": "1234"
+    },
+    {
+      "id": 2,
+      "nombre": "Ervin Howell",
+      "credencialAcesso": "Antonette",
+      "correo": "Shanna@melissa.tv",
+      "contraseña": "1234"
+    },
+    {
+      "id": 3,
+      "nombre": "Clementine Bauch",
+      "credencialAcesso": "Samantha",
+      "correo": "Nathan@yesenia.net",
+      "contraseña": "1234"
+    },
+    {
+      "id": 4,
+      "nombre": "Patricia Lebsack",
+      "credencialAcesso": "Karianne",
+      "correo": "Julianne.OConner@kory.org",
+      "contraseña": "1234"
+    },
+    {
+      "id": 5,
+      "nombre": "Chelsey Dietrich",
+      "credencialAcesso": "Kamren",
+      "correo": "Lucio_Hettinger@annie.ca",
+      "contraseña": "1234"
+    },
+    {
+      "id": 6,
+      "nombre": "Mrs. Dennis Schulist",
+      "credencialAcesso": "Leopoldo_Corkery",
+      "correo": "Karley_Dach@jasper.info",
+      "contraseña": "1234"
+    },
+    {
+      "id": 7,
+      "nombre": "Kurtis Weissnat",
+      "credencialAcesso": "Elwyn.Skiles",
+      "correo": "Telly.Hoeger@billy.biz",
+      "contraseña": "1234"
+    },
+    {
+      "id": 8,
+      "nombre": "Nicholas Runolfsdottir V",
+      "credencialAcesso": "Maxime_Nienow",
+      "correo": "Sherwood@rosamond.me",
+      "contraseña": "1234"
+    },
+    {
+      "id": 9,
+      "nombre": "Glenna Reichert",
+      "credencialAcesso": "Delphine",
+      "correo": "Chaim_McDermott@dana.io",
+      "contraseña": "1234"
+    },
+    {
+      "id": 10,
+      "nombre": "Clementina DuBuque",
+      "credencialAcesso": "Moriah.Stanton",
+      "correo": "Rey.Padberg@karina.biz",
+      "contraseña": "1234"
+    }
+  ],
+  "Profesor": [
+    {
+      "id": 1,
+      "nombreProfesor": "Magdalena Ríos",
+      "credencialAcesso": "magnarios",
+      "correo": "magna.rios@gmail.com",
+      "contraseña": "12345"
+    },
+    {
+      "id": 2,
+      "nombreProfesor": "Carlos Santiago",
+      "credencialAcesso": "carsanti",
+      "correo": "ca.santi@gmail.com",
+      "contraseña": "12345"
+    },
+    {
+      "id": 3,
+      "nombreProfesor": "Rafael Ortega",
+      "credencialAcesso": "rafatega",
+      "correo": "ra.tega@gmail.com",
+      "contraseña": "12345"
+    }
+  ],
+  "Materia": [
+    {
+      "id": 1,
+      "nombreMateria": "Lenguaje-006",
+      "idProfesor": 1,
+      "qr": 1
+    },
+    {
+      "id": 2,
+      "nombreMateria": "Matematicas-001",
+      "idProfesor": 2,
+      "qr": 2
+    },
+    {
+      "id": 3,
+      "nombreMateria": "Ingles-004",
+      "idProfesor": 3,
+      "qr": 3
+    }
+  ],
+  "sucursales": [
+    {
+      "id": 1,
+      "nombre": "Sede Vespucio sur",
+      "direccion": "Vespucio 100",
+      "idProfesor": 1,
+      "idMateria": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Sede Vespucio norte",
+      "direccion": "Vespucio 150",
+      "idProfesor": 1,
+      "idMateria": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Sede Olimpo",
+      "direccion": "Pje Olimpo 50",
+      "idProfesor": 2,
+      "idMateria": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Sede Oeste",
+      "direccion": "Cerrillos 12",
+      "idProfesor": 2,
+      "idMateria": 2
+    },
+    {
+      "id": 5,
+      "nombre": "Sede  Maipú",
+      "direccion": "Maipú 100010",
+      "idProfesor": 3,
+      "idMateria": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Sede Antonio Varas",
+      "direccion": "Varas 666",
+      "idProfesor": 3,
+      "idMateria": 3
+    },
+    {
+      "id": 7,
+      "nombre": "Sede Melipilla",
+      "direccion": "Melipilla 10",
+      "idProfesor": 1,
+      "idMateria": 1
+    },
+    {
+      "id": 8,
+      "nombre": "Sede Plaza oeste",
+      "direccion": "Vespucio 1501 Local 500",
+      "idProfesor": 1,
+      "idMateria": 1
+    },
+    {
+      "id": 9,
+      "nombre": "Sede Plaza oeste",
+      "direccion": "Vespucio 1501 Local 500",
+      "idProfesor": 2,
+      "idMateria": 2
+    }
+  ],
+  "Asistencia": [
+   
+  ]
+} 

@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Secondary" class="alinear">
+    <ion-buttons slot="start">
+      <ion-back-button class="titulo" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <br><ion-title class="titulo">Publicaciones</ion-title><br>
+  </ion-toolbar>
+</ion-header >
+
+<ion-content>
+  <div *ngIf="listadocoment.length > 0">
+    <div *ngFor="let aux1 of listadocoment" >
+      <ion-row>
+        <ion-col size="5">{{aux1.id}}</ion-col>
+        <ion-col size="6">{{aux1.name}}</ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
